@@ -408,6 +408,17 @@ define_cs_enum_wrapper!(
     => Micro = { cs_mode::CS_MODE_MICRO };
     /// RISC-V compressed instruction mode
     => RiscVC = { cs_mode::CS_MODE_RISCV_C };
+    => RiscVZcmp = { cs_mode::CS_MODE_RISCV_ZCMP_ZCMT_ZCE };
+    => RiscVFD = { cs_mode::CS_MODE_RISCV_FD };
+    => RiscVV = { cs_mode::CS_MODE_RISCV_V };
+    => RiscVA = { cs_mode::CS_MODE_RISCV_A };
+    => RiscVZba = { cs_mode::CS_MODE_RISCV_ZBA };
+    => RiscVZbb = { cs_mode::CS_MODE_RISCV_ZBB };
+    => RiscVZbc = { cs_mode::CS_MODE_RISCV_ZBC };
+    => RiscVZbs = { cs_mode::CS_MODE_RISCV_ZBS };
+    => RiscVZbkb = { cs_mode::CS_MODE_RISCV_ZBKB };
+    => RiscVZbkc = { cs_mode::CS_MODE_RISCV_ZBKC };
+    => RiscVZbkx = { cs_mode::CS_MODE_RISCV_ZBKX };
 );
 
 define_cs_enum_wrapper!(
