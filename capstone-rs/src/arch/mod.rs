@@ -368,6 +368,17 @@ macro_rules! arch_info_base {
                     )
                 ( extra_modes:
                     RiscVC,
+                    RiscVZcmp,
+                    RiscVFD,
+                    RiscVV,
+                    RiscVA,
+                    RiscVZba,
+                    RiscVZbb,
+                    RiscVZbc,
+                    RiscVZbs,
+                    RiscVZbkb,
+                    RiscVZbkc,
+                    RiscVZbkx,
                     )
                 ( syntax: )
                 ( both_endian: true )
