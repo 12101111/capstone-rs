@@ -419,6 +419,7 @@ define_cs_enum_wrapper!(
     => RiscVZbkb = { cs_mode::CS_MODE_RISCV_ZBKB };
     => RiscVZbkc = { cs_mode::CS_MODE_RISCV_ZBKC };
     => RiscVZbkx = { cs_mode::CS_MODE_RISCV_ZBKX };
+    => RiscVXThead = { cs_mode::CS_MODE_RISCV_THEAD };
 );
 
 define_cs_enum_wrapper!(

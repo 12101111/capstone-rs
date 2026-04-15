@@ -379,6 +379,7 @@ macro_rules! arch_info_base {
                     RiscVZbkb,
                     RiscVZbkc,
                     RiscVZbkx,
+                    RiscVXThead,
                     )
                 ( syntax: )
                 ( both_endian: true )
