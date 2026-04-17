@@ -634,6 +634,11 @@ impl Capstone {
     pub fn is_diet() -> bool {
         unsafe { cs_support(CS_SUPPORT_DIET as c_int) }
     }
+
+    /// Returns arch
+    pub fn arch(&self) -> Arch {
+        self.arch
+    }
 }
 
 impl Drop for Capstone {
