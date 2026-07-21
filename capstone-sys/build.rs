@@ -237,7 +237,7 @@ fn impl_insid_to_insenum(bindings: &str) -> String {
         // find instructions and their id
         let re_ins_ids = Regex::new(&format!(
             "(?P<ins>(?i){}(?-i)_INS_[A-Z0-9_]+) = (?P<id>\\d+)",
-            &arch
+            arch
         ))
         .expect("Unable to compile regex");
 
@@ -246,7 +246,7 @@ fn impl_insid_to_insenum(bindings: &str) -> String {
             "impl From<u32> for {}_insn {{\n
             fn from(id: u32) -> Self {{\n
             match id {{\n",
-            &arch
+            arch
         )
         .unwrap();
 
@@ -255,7 +255,7 @@ fn impl_insid_to_insenum(bindings: &str) -> String {
             writeln!(
                 impl_arch_enum,
                 "{} => {}_insn::{},",
-                &cap_ins_id["id"], &arch, &cap_ins_id["ins"]
+                &cap_ins_id["id"], arch, &cap_ins_id["ins"]
             )
             .unwrap();
         }
@@ -269,7 +269,7 @@ fn impl_insid_to_insenum(bindings: &str) -> String {
         write!(
             impl_arch_enum,
             "_ => {}_insn::{}_INS_{},",
-            &arch,
+            arch,
             arch.to_uppercase(),
             invalid_str,
         )
